@@ -143,19 +143,21 @@ nav {
 }
 
 /* ----------------
-Блок "Почему мы"
+Заголовки блоков
 ---------------- */
-.why_us_wrapper {
-    background-image: url(../images/why.jpg);
+.why_us_wrapper,
+.us_wrapper {
     height: 140vh;
     background-size: cover;
+    background-position: center;
 
     /* Чтобы избавиться от "Схлопывания внешних границ" */
     padding-top: 1px;
 }
 
 /* Заголовок */
-.why_us_wrapper .title_wrapper {
+.why_us_wrapper .title_wrapper,
+.us_wrapper .title_wrapper {
     margin-left: auto;
     margin-right: auto;
 
@@ -164,11 +166,13 @@ nav {
     margin-top: 100px;
 }
 
-.why_us_wrapper .title_wrapper .content {
+.why_us_wrapper .title_wrapper .content,
+.us_wrapper .title_wrapper .content {
     text-align: center;
 }
 
-.why_us_wrapper .title_wrapper .content * {
+.why_us_wrapper .title_wrapper .content *,
+.us_wrapper .title_wrapper .content * {
     vertical-align: middle;
 }
 
@@ -176,19 +180,31 @@ nav {
     margin-right: 50px;
 }
 
-.why_us_wrapper .title {
+.why_us_wrapper .title_wrapper .content,
+.us_wrapper .title_wrapper .content {
+    font-size: 40px;
+}
+
+.why_us_wrapper .title,
+.us_wrapper .title,
+.us_wrapper .smaller_text {
     color: white;
 
+    text-align: center;
+
     font-family: 'Roboto', sans-serif;
-    font-size: 53px;
+    font-size: 100%;
 }
 
 .line_right {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
-/* Причины */
-.why_us_wrapper .reasons_wrapper {
+/* ----------------
+Содержимое блоков
+---------------- */
+.why_us_wrapper .reasons_wrapper,
+.us_wrapper .facts_wrapper {
     margin-left: auto;
     margin-right: auto;
 
@@ -196,6 +212,15 @@ nav {
 
     margin-top: 80px;
 }
+
+/* ----------------
+Блок "Почему мы?"
+---------------- */
+.why_us_wrapper {
+    background-image: url(../images/why.jpg);
+}
+
+/* Причины */
 
 .why_us_wrapper .reasons_wrapper .content {
     text-align: center;
@@ -207,7 +232,7 @@ nav {
     position: relative;
 }
 
-.why_us_wrapper .reasons_wrapper .content .reason .fact_wrapper {
+.why_us_wrapper .reasons_wrapper .content .reason .explanation_wrapper {
     position: absolute;
 
     left: 134px;
@@ -219,7 +244,7 @@ nav {
     display: flex;
 }
 
-.why_us_wrapper .reasons_wrapper .content .reason .fact {
+.why_us_wrapper .reasons_wrapper .content .reason .explanation {
     margin: auto;
 
     font-size: 30px;
@@ -256,4 +281,62 @@ nav {
 
 .why_us_wrapper .reasons_wrapper .content .reason .number {
     font-size: 230%;
+}
+
+/* ----------------
+Блок "Мы"
+---------------- */
+.us_wrapper {
+    background-image: url(../images/us.jpg);
+
+    height: 150vh;
+}
+
+/* Заголовок */
+.us_wrapper .smaller_text {
+    font-size: 65%;
+}
+
+/* Факты */
+.us_wrapper .facts_wrapper .content {
+    text-align: center;
+}
+
+.us_wrapper .facts_wrapper .content .fact {
+    display: flex;
+
+    margin-bottom: 50px;
+}
+
+.us_wrapper .facts_wrapper .content .fact .img {
+    clear: left;
+    opacity: 75%;
+
+    margin-left: 150px;
+}
+.us_wrapper .facts_wrapper .content .fact .description_wrapper {
+    float: left;
+
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 250px;
+}
+
+.us_wrapper .description_wrapper {
+    display: flex;
+
+    height: 75px;
+
+    padding-left: 40px;
+
+    border-left: solid 1px white;
+}
+
+.us_wrapper .description_wrapper .description {
+    margin: auto;
+
+    font-size: 20px;
+    text-align: left;
+
+    color: white;
 }
