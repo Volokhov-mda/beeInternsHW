@@ -344,7 +344,7 @@ nav {
 .statistics_wrapper {
     height: 600px;
 
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 /* Заголовок */
@@ -430,4 +430,84 @@ nav {
     font-size: 20px;
 
     color: black;
+}
+
+/* ----------------
+Подвал сайта
+---------------- */
+footer {
+    width: 100%;
+    height: 75px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+
+    padding: 1px;
+    
+    background: white;
+
+    position: relative;
+}
+
+footer .content {
+    width: 1180px;
+
+    margin: 0 auto;
+}
+
+footer .flogo {
+    position: absolute;
+
+    margin-left: 10px;
+    top: 50%;
+
+    margin-top: -29px;
+}
+
+footer .developed_by_text {
+    position: absolute;
+
+    margin-left: 1020px;
+    top: 50%;
+
+    margin-top: -26px;
+
+    text-align: right;
+
+    font-size: 19px;
+
+    color: grey;
+}
+
+footer .developed_by_text .orange_text {
+    font-size: 20px;
+
+    color: orange;
+}
+
+footer .developed_by {
+    position: absolute;
+
+    margin-left: 1120px;
+    top: 50%;
+
+    margin-top: -24px;
+}
+
+footer .about1 {
+    text-align: center;
+
+    color: green;
+}
+
+footer .about2 {
+    text-align: center;
+
+    color: grey;
+}
+
+footer .about2 a {
+    color: orange;
 }
