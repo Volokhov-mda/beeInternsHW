@@ -1,0 +1,85 @@
+/* --------------
+Шапка страницы 
+-------------- */
+/* Верхняя часть шапки */
+header .upper_menu_wrapper {
+    padding: 40px 81px 37px 81px;
+}
+
+header .upper_menu {
+    width: 100%;
+}
+
+/* Логотип компании */
+header .company_logo {
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+header .company_logo .blue_letter {
+    color: #007AFF;
+}
+
+/* Поле поиска */
+header .search > * {
+    float: left;
+}
+
+header .search input {
+    height: 38px;
+    width: 400px;
+
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+header .search .submit {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    border: none;
+
+    background: #007AFF;
+    color: white;
+}
+
+/* Правая часть верхнего меню */
+header .actions_menu > * {
+    float: left;
+
+    margin-right: 27px;
+}
+
+header .actions_menu a:last-child {
+    margin-right: 0px;
+}
+
+header .actions_menu .log_in {
+    margin-right: 22px;
+
+    padding: 12px 30px;
+}
+
+header .actions_menu .sign_up {
+    padding: 12px 25px;
+}
+
+/* Нижнее меню */
+header .menu_wrapper {
+    background: #F4F4F4;
+}
+
+header .menu {
+    width: 100%;
+    height: 45px;
+
+    padding-left: 80px;
+
+    box-sizing: border-box;
+}
+
+header .menu a {
+    font-size: 15px;
+
+    color: #737270;
+}
