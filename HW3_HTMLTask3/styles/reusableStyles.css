@@ -56,7 +56,7 @@ input:focus {
     margin-right: 0px;
 }
 
-.menu a:hover {
+a:hover {
     text-decoration: underline;
 }
 

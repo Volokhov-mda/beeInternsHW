@@ -6,7 +6,3 @@ html {
 body {
     margin: 0;
 }
-
-body * {
-    outline: solid 1px red;
-}
