@@ -1,0 +1,160 @@
+/* --------------
+Контент страницы
+-------------- */
+.content {
+    max-width: 970px;
+
+    margin-top: 39px;
+    margin-bottom: 60px;
+}
+
+.content > .title {
+    text-align: center;
+
+    font-size: 26px;
+}
+
+/* Меню */
+.content .menu_wrapper {
+    margin-top: 35px;
+
+    background: transparent;
+}
+
+.content .menu {
+    height: 20px;
+
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content .menu a {
+    font-size: 15px;
+
+    margin-right: unset;
+    
+    color: #878786;
+}
+
+.content .menu .chosen_option {
+    color: #007AFF;
+}
+
+/* Форма */
+.content .form_wrapper {
+    width: 100%;
+
+    margin-top: 20px;
+
+    border: 1px solid #C6C6C5;
+    border-radius: 5px;
+}
+
+.content .forms {
+    margin-top: 55px;;
+    margin-left: 21px;
+    margin-right: 17px;
+}
+
+.content .form {
+    margin-top: 40px;
+}
+
+.content .title {
+    margin-bottom: 9px;
+}
+
+.content .form input {
+    height: 40px;
+
+    padding: 0 17px;
+}
+
+.content .inputs_wrapper .mr {
+    width: 115px;
+}
+
+.content .inputs_wrapper .name {
+    width: 200px;
+}
+
+.content .title_form {
+    width: 895px;
+}
+
+.content .blue_title {
+    margin-top: 49px;
+    margin-bottom: 10px;
+
+    color: #007AFF;
+}
+
+.content .form_group .form {
+    display: inline-block;
+
+    margin: 0;
+
+    /* position: relative; */
+}
+
+.content .form_group .form input {
+    width: 262px;
+    margin-right: 14px;
+}
+
+.content .form_group .form input:last-child {
+    margin-right: 0px;
+}
+
+.content .first_line {
+    border-top: solid 1px #C6C6C5;
+
+    margin-top: 0px;
+    padding-top: 17px;
+}
+
+.content .second_line {
+    margin-top: 31px;
+    margin-bottom: 93px;
+}
+
+.content .second_line .warning_message {
+    width: 298px;
+
+    margin-top: 10px;
+
+    position: absolute;
+
+    font-size: 14px;
+
+    color: #878786;
+}
+
+.form_actions {
+    margin-bottom: 20px;
+
+    padding: 0 13px;
+}
+
+.form_actions .go_back {
+    padding: 12px 20px;
+}
+
+.form_actions .warning_message {
+    font-size: 14px;
+
+    color: #878786;
+}
+
+.form_actions .submit_form {
+    padding: 12px 13px;
+    
+    border: none;
+
+    background: #007AFF;
+
+    color: white;
+}
