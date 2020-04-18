@@ -1,3 +1,11 @@
+.items {
+    max-width: 1250px;
+    min-width: 1250px;
+}
+
+/* ------------------
+ Баннер главного продукта
+------------------ */
 .main_item {
     background: white;
 }
@@ -58,6 +66,12 @@
     padding: 7px 0 20px;
 
     font-size: 50px;
+}
+
+/* Верхний индекс */
+.main_item .sup {
+    position: absolute;
+    top: -32px;
 }
 
 .main_item button {
@@ -123,4 +137,94 @@
 
 .main_item .colors .color_black {
     background: #000;
+}
+
+/* ------------------
+Группа продуктов
+------------------ */
+.items .items_group {
+    width: 100%;
+
+    padding-bottom: 70px;
+}
+
+.items .items_group .item {
+    position: relative;
+
+    height: 560px;
+    width: 393px;
+
+    background: #F8F8F9;
+}
+
+.items .items_group .item .info {
+    position: absolute;
+
+    margin-left: 50px;
+
+    bottom: 48px;
+}
+
+.items .items_group .item .info:not(img) {
+    z-index: 2;
+}
+
+.items .items_group .title {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.items .items_group .title .sup {
+    position: absolute;
+
+    font-size: 70%;
+}
+
+.items .items_group .description {
+    max-width: 264px;
+
+    padding: 4px 0 20px;
+    
+    font-size: 14px;
+    font-weight: normal;
+
+    line-height: 21px;
+}
+
+.items .items_group .price {
+    margin-right: 20px;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    color: #9D8220;
+}
+
+.items .items_group .buy_button {
+    padding: 12px 33px;
+
+    font-size: 14px;
+}
+
+.items .items_group .item_image {
+    position: absolute;
+}
+
+.items .items_group .item1 {
+    width: 230px;
+    height: 480px;
+
+    top: 40px;
+    left: 102px;
+}
+
+.items .items_group .item2 {
+    top: -17px;
+    left: 55px;
+}
+
+.items .items_group .item3 {
+    top: 100px;
+    left: 124px;
 }

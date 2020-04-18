@@ -100,9 +100,3 @@ a:hover {
     font-size: 13px;
     font-weight: lighter;
 }
-
-/* Верхний индекс */
-.sup {
-    position: absolute;
-    top: -37%;
-}
