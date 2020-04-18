@@ -1,0 +1,52 @@
+.banner {
+    background: #2B2835;
+}
+
+.banner .subTitle, 
+.banner .title,
+.banner .price {
+    color: white;
+}
+
+.banner .info {
+    width: 100%;
+    max-width: 508px;
+
+    padding: 200px 0 180px;
+}
+
+.banner .banner_wrapper {
+    position: relative;
+
+    max-width: 1240px;
+}
+
+.banner .banner_image img {
+    position: absolute;
+
+    flex-direction: column;
+
+    top: 0;
+    left: -110px;
+}
+
+.banner .title {
+    font-size: 40px;
+}
+
+.banner .title {
+    font-weight: bold;
+    padding: 13px 0 40px;
+}
+
+.main_banner .banner button {
+    margin-left: 34px;
+    
+    background: #FFC700;
+
+    color: #000;
+}
+
+.extra_text {
+    color: #FFC700;
+}
