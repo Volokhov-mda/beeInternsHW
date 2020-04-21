@@ -1,0 +1,44 @@
+._flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+._flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Выравнивания по ширине */
+._justify-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+._justify-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Выравнивания по центру */
+._align-center {
+    display: flex;
+    align-items: center;
+}
+
+._center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стандартные стили блоков */
+.main_block {
+    border-radius: 5px;
+
+    background: white;   
+}
+
+.sub_block {
+    border-radius: 8px;
+
+    background: rgba(0, 84, 254, 0.04);
+}
