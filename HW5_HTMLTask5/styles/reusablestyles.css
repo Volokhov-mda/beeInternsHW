@@ -42,3 +42,11 @@
 
     background: rgba(0, 84, 254, 0.04);
 }
+
+/* Стандартный тайтл для блоков контента */
+.content_title {
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #4A4A4A;
+}
