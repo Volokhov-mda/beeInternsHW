@@ -5,5 +5,9 @@ body {
     font-size: 14px;
     font-family: 'Arimo', sans-serif;
 
+    line-height: 16px;
+
+    color: #4A4A4A;
+
     background: #F2F2F2;
 }

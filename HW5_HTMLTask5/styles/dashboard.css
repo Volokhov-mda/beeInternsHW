@@ -10,8 +10,6 @@
     font-weight: bold;
 
     line-height: 20px;
-
-    color: #4A4A4A;
 }
 
 .dashboard_content .block_group {
@@ -27,10 +25,7 @@
 .dashboard_content .block_group .block_title {
     margin-bottom: 15px;
 
-    font-size: 14px;
     font-weight: normal;
-
-    color: #4A4A4A;
 }
 
 .dashboard_content .block_group .block_picture {

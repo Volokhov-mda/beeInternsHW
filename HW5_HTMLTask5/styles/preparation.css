@@ -11,12 +11,6 @@
     height: 50px;
 }
 
-.preparation_wrapper .title {
-    font-size: 14px;
-
-    color: #4A4A4A;
-}
-
 /* -------------
 Первый блок
 ------------- */
@@ -47,7 +41,7 @@
     font-size: 14px;
     font-weight: bold;
 
-    color: rgba(74, 74, 74, .5);
+    opacity: .5;
 }
 
 .preparation_wrapper .second_block .block_group {
@@ -60,10 +54,9 @@
     width: 98px;
     height: 158px;
 
-    font-size: 14px;
     font-weight: bold;
 
-    color: rgba(74, 74, 74, .5);
+    opacity: .5;
 }
 
 .preparation_wrapper .second_block .block_group .sub_block .text {
@@ -88,17 +81,8 @@
     margin-top: 21px;
 }
 
-.preparation_wrapper .lower_block .form_col .label_cb,
-.preparation_wrapper .lower_block .form_col .form_label {
-    font-size: 14px;
-
-    color: #4A4A4A;
-}
-
 .preparation_wrapper .lower_block .note_wrapper {
     font-size: 12px;
-
-    color: #4A4A4A;
 }
 
 .preparation_wrapper .lower_block .form_col .some_main_note {
@@ -155,9 +139,8 @@
 }
 
 .preparation_wrapper .right_block .description {
-    font-size: 14px;
     font-weight: bold;
 
-    color: rgba(74, 74, 74, .5);
+    opacity: .5;
 }
 

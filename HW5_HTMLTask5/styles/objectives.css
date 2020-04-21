@@ -6,8 +6,7 @@
     padding-top: 12px;
     width: 500px;
 
-    font-size: 14px;
     font-weight: bold;
 
-    color: rgba(74, 74, 74, .5);
+    opacity: .5;
 }
