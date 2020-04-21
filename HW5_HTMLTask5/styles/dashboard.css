@@ -1,0 +1,39 @@
+.dashboard_content {
+    margin-top: 17px;
+    margin-left: 19px;
+}
+
+.dashboard_content .dashbord_title {
+    text-transform: uppercase;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    line-height: 20px;
+
+    color: #4A4A4A;
+}
+
+.dashboard_content .block_group {
+    margin-top: 17px;
+
+    max-width: 195px;
+}
+
+.dashboard_content .block_group .block {
+    padding-bottom: 11px;
+}
+
+.dashboard_content .block_group .block_title {
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    font-weight: normal;
+
+    color: #4A4A4A;
+}
+
+.dashboard_content .block_group .block_picture {
+    width: 195px;
+    height: 164px;
+}
