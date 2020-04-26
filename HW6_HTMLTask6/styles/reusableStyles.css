@@ -1,0 +1,10 @@
+._center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+._justify-evenly {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

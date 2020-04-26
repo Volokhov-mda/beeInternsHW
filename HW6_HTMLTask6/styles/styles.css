@@ -7,3 +7,15 @@ body {
 
     color: #5D5D5D;
 }
+
+.container {
+    max-width: 640px;
+    background: #fff;
+}
+
+.page_heading {
+    font-weight: bold;
+    font-size: 35px;
+
+    color: #000;
+}
