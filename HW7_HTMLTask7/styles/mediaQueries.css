@@ -39,7 +39,7 @@
     }
 
     .header .input_wrapper .search_field {
-        padding-left: 10px;
+        margin-left: 10px;
 
         width: 141px;
 
@@ -239,7 +239,7 @@
     }
 
     .header .input_wrapper .search_field {
-        padding-left: 23px;
+        margin-left: 23px;
 
         width: 170px;
 

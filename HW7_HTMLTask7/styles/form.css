@@ -10,7 +10,6 @@
 
 .news_letter_form .input {
     border: none;
-    outline: none;
 
     border-radius: 10px;
     
@@ -21,7 +20,6 @@
 
 .news_letter_form .submit {
     border: none;
-    outline: none;
 
     border-radius: 10px;    
 

@@ -32,11 +32,6 @@
     text-align: center;
 }
 
-.header .links_wrapper .nav_link:hover {
-    transition: .3s;
-    color: #fff;
-}
-
 .header .links_wrapper .nav_link.active {
     color: #fff;
 }
