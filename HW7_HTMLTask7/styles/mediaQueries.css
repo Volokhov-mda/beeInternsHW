@@ -415,3 +415,127 @@
         margin-top: 17px;
     }
 }
+
+@media (min-width: 1440px) {
+    /* Меню страницы */
+    nav .nav_logo {
+        margin: 0 0 0 40px;
+    }
+
+    nav .nav_logo picture {
+        height: 80px;
+    }
+
+    nav .nav_logo picture {
+        display: block;
+    }
+
+    nav .nav_logo img {
+        width: 65px;
+        height: 80px;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .header .links_wrapper {
+        margin-left: 98px;
+    }
+
+    .header .link_wrapper:not(:first-child) { display: block; }
+
+    .header .link_wrapper {
+        margin-right: 50px;
+    }
+
+    .header .links_wrapper .nav_link.active::after {
+        bottom: -26px;
+    }
+    
+    /* Контент страницы */
+    .content_wrapper {
+        background-image: url(/img/Background768.png);
+        background-position: center;
+
+        width: 100%;
+        height: 810px;
+    }
+
+    .content {
+        padding: 160px 0 0 216px;
+    }
+
+    .content .bike_info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content .bike_info .review_wrapper {
+        margin-top: 0;
+    }
+
+    /* Форма */
+    .news_letter_form {
+        padding: 60px 230px 90px;
+    }
+
+    .news_letter_form .sign_up_message {
+        padding: 0 96px;
+
+        font-size: 35px;
+        line-height: 53px;
+    }
+
+    .news_letter_form form {
+        padding: 0;
+        margin-top: 40px;
+
+        width: 100%;
+
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .news_letter_form .input_wrapper {
+        margin: 0;
+    }
+
+    .news_letter_form .input {
+        margin-right: 40px;
+
+        width: 267px;
+        height: 50px;
+    }
+
+    .news_letter_form .submit {
+        margin: 0;
+
+        width: 300px;
+        height: 50px;
+    }
+
+    /* Подвал страницы */
+    footer .footer_content {
+        margin: 20px 0;
+        padding: 0 40px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    } 
+
+    footer .footer_links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .footer_link {
+        margin-right: 30px;
+    }
+
+    footer .developed {
+        margin: 0;
+    }
+}
