@@ -1,0 +1,20 @@
+/* Выравнивания */
+._justify-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+._align-center {
+    align-items: center;
+}
+
+/* Направления flex блоков */
+._direction-row {
+    display: flex;
+    flex-direction: row;
+}
+
+._direction-column {
+    display: flex;
+    flex-direction: column;
+}
