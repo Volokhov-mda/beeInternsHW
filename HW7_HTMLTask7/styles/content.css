@@ -1,0 +1,23 @@
+.content .bike_name {
+    font-weight: bold;
+
+    margin: 0;
+
+    color: #fff;
+}
+
+.content .action_button {
+    border: 0;
+    padding: 0;
+    outline: none;
+
+    background: none;
+}
+
+.content .action_text {
+    color: #f6f6f6;
+}
+
+.content .bike_info {
+    color: #F6F6F6;
+}
