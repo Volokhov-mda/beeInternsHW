@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BI HW</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="styles/mediaQueries.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reusableStyles.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="header _direction-row _align-center">
+            <div class="logo_wrapper">
+                <a href="#" class="nav_logo">
+                    <picture>
+                        <source srcset="img/BurgerMenu.svg" media="(max-width: 1439px)">
+                        <source srcset="img/logo.svg">
+                        <img src="img/logo.svg" alt="logo">
+                    </picture>
+                </a>
+            </div>
+    
+            <div class="links_wrapper _direction-row _align-center">
+                <div class="link_wrapper">
+                    <a href="#" class="nav_link active">Models</a>
+                </div>
+                <div class="link_wrapper">
+                    <a href="#" class="nav_link">Dimensions</a>
+                </div>
+                <div class="link_wrapper">
+                    <a href="#" class="nav_link">Facts &amp; Figures</a>
+                </div>
+                <div class="link_wrapper">
+                    <a href="#" class="nav_link">History</a>
+                </div>
+                <div class="link_wrapper">
+                    <a href="#" class="nav_link">Reviews</a>
+                </div>
+
+
+                <div class="input_wrapper">
+                    <div class="input_content _direction-row _align-center">
+                        <button class="search_button"><img class="search_icon" src="img/search.svg" alt="search"></button>
+                        <input class="search_field" type="search" placeholder="Search for details…">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content_wrapper">
+            <div class="content">
+                <h1 class="bike_name">Honda<br>Sport<br>CRF 450RX</h1>
+
+                <div class="actions_wrapper">
+                    <div class="watch_wrapper _direction-row _align-center">
+                        <button class="watch_button action_button" id="play"><img src="/img/play.svg" alt="play" name="play" class="play_icon action_icon"></button>
+                        <label for="play" class="watch_text action_text">Watch film</label>
+                    </div>
+                    <div class="bookmark_wrapper _direction-row _align-center">
+                        <button class="bookmark_button action_button" id="bookmark"><img src="/img/bookmark.svg" alt="bookmark" name="bookmark" class="bookmark_icon action_icon"></button>
+                        <label for="bookmark" class="bookmark_text action_text">Bookmark for later</label>
+                    </div>
+                </div>
+
+                <div class="bike_info">
+                    <div class="characteristics_wrapper">
+                        <div class="charecteristic_wrapper">
+                            <div class="charecteristic_title title">Manufacturer</div>
+                            <div class="charecteristic_description description">Honda</div>
+                        </div>
+                        <div class="charecteristic_wrapper">
+                            <div class="charecteristic_title title">Production</div>
+                            <div class="charecteristic_description description">2019</div>
+                        </div>
+                        <div class="charecteristic_wrapper">
+                            <div class="charecteristic_title title">Engine</div>
+                            <div class="charecteristic_description description">0.45 L PGM-FI</div>
+                        </div>
+                    </div>
+                    <div class="review_wrapper">
+                        <div class="review_title title">Reviews</div>
+                        <div class="review_rating _direction-row _align-center">
+                            <img src="/img/star_filled.svg" alt="star" class="star">
+                            <img src="/img/star_filled.svg" alt="star" class="star">
+                            <img src="/img/star_filled.svg" alt="star" class="star">
+                            <img src="/img/star_filled.svg" alt="star" class="star">
+                            <img src="/img/star.svg" alt="star" class="star">
+                            <div class="rating">4.0/5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news_letter_form _align-center">
+            <p class="sign_up_message">Sign up for our email newsletter and get the latest our company news. <br>
+                Get free trial for 3 month.</p>
+
+            <form action="/posturl/newsletter/" method="POST" name="newsletter">
+                <div class="input_wrapper">
+                    <input type="text" class="input name_input" name="name" placeholder="Name" minlength="2" maxlength="30" required>
+                    <input type="email" class="input e-mail_input" name="e-mail" placeholder="E-Mail" required>
+                </div>
+                <button type="submit" class="submit">GET STARTED FOR FREE</button>
+            </form>
+        </div>
+
+        <footer>
+            <div class="footer_content">
+                <div class="footer_links">
+                    <div class="footer_link"><a href="#">Cars</a></div>
+                    <div class="footer_link"><a href="#">Motorcycles</a></div>
+                    <div class="footer_link"><a href="#">Engines</a></div>
+                    <div class="footer_link"><a href="#">Water moto technology</a></div>
+                </div>
+                <div class="developed">&copy; 2020, &lt;BeeInterns /&gt;</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

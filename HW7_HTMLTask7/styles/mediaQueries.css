@@ -1,0 +1,541 @@
+@media (max-width: 320px) {
+    /* Меню страницы */
+    nav .nav_logo {
+        margin: 20px 25px 20px 20px;
+    }
+
+    nav .nav_logo img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .header .link_wrapper:not(:first-child) { display: none; }
+
+    .header .link_wrapper {
+        margin-right: 22px;
+
+        font-size: 15px;
+        line-height: 23px;
+
+        text-align: center;
+    }
+
+    .header .links_wrapper .nav_link.active::after {
+        bottom: -18px;
+    }
+
+    .header .input_wrapper .input_content {
+        padding-left: 10px;
+    }
+
+    .header .input_wrapper .search_button,
+    .header .input_wrapper .search_button img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .header .input_wrapper .search_field {
+        margin-left: 10px;
+
+        width: 141px;
+
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .header .input_wrapper .search_field::placeholder {
+        font-size: 13px;
+        line-height: 20px;
+    
+        color: white;
+    }
+
+    /* Контент страницы */
+    .content_wrapper {
+        background-image: url(/img/Background320.png);
+        background-position: center;
+
+        width: 100%;
+        height: 480px;
+    }
+
+    .content {
+        padding: 80px 0 0 21px;
+    }
+
+    .content .bike_name {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .content .actions_wrapper {
+        margin-top: 15px;
+    }
+
+    .content .action_button {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .content .action_icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content .action_text {
+        margin-left: 10px;
+
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .content .bookmark_wrapper {
+        margin-top: 11px;
+    }
+
+    .content .bike_info {
+        margin-top: 12px;
+    }
+
+    .content .charecteristic_wrapper:not(:first-child),
+    .content .review_wrapper {
+        margin-top: 4px;
+    }
+
+    .content .bike_info .title {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .content .bike_info .description {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .content .bike_info .star {
+        margin-right: 10px;
+
+        width: 15px;
+        height: 15px;
+    }
+
+    .content .bike_info .rating {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    /* Форма */
+    .news_letter_form {
+        padding: 30px calc(20/320 * 100%) 40px;
+    }
+
+    .news_letter_form .sign_up_message {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .news_letter_form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news_letter_form .input_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news_letter_form .input {
+        margin: 20px auto 0;
+        padding-left: 39px;
+
+        width: calc(100% - 39px);
+        height: 35px;
+
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .news_letter_form .submit {
+        margin: 20px auto 0;
+
+        width: 100%;
+        height: 35px;
+
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .news_letter_form .input_wrapper .name_input {
+        background-position: 9px 50%;
+        background-size: 15px 15px;
+    }
+
+    .news_letter_form .input_wrapper .e-mail_input {
+        background-position: 9px 50%;
+        background-size: 15px 10px;
+    }
+
+    /* Подвал страницы */
+    footer .footer_content {
+        margin: 16px 0 0 20px;
+
+        font-size: 17px;
+        line-height: 26px;
+    } 
+
+    footer .footer_link:not(:first-child) {
+        margin-top: 8px;
+    }
+
+    footer .developed {
+        margin: 18px 0;
+    }
+}
+
+@media (min-width: 321px) {
+    /* Меню страницы */
+    nav .nav_logo {
+        margin: 10px 39px 10px 20px;
+    }
+
+    nav .nav_logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .header .link_wrapper:not(:first-child) { display: none; }
+
+    .header .link_wrapper {
+        margin-right: 45px;
+
+        font-size: 18px;
+        line-height: 27px;
+
+        text-align: center;
+    }
+
+    .header .links_wrapper .nav_link.active::after {
+        bottom: -16px;
+    }
+
+    .header .input_wrapper .input_content {
+        padding-left: 40px;
+    }
+
+
+    .header .input_wrapper .search_button,
+    .header .input_wrapper .search_button img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header .input_wrapper .search_field {
+        margin-left: 23px;
+
+        width: 170px;
+
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    /* Контент страницы */
+    .content_wrapper {
+        background-image: url(/img/Background768.png);
+        background-position: center;
+
+        width: 100%;
+        height: 810px;
+    }
+
+    .content {
+        padding: 113px 0 0 93px;
+    }
+
+    .content .bike_name {
+        font-weight: bold;
+        font-size: 90px;
+        line-height: 100px;
+    }
+
+    .content .actions_wrapper {
+        margin-top: 30px;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content .action_button {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .content .action_icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .content .action_text {
+        margin-left: 21px;
+
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .content .bookmark_wrapper {
+        margin-left: 51px;
+    }
+
+    .content .bike_info {
+        margin-top: 81px;
+    }
+
+    .content .bike_info .characteristics_wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content .bike_info .charecteristic_wrapper {
+        margin-right: 77px;
+    }
+
+    .content .bike_info .title {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .content .bike_info .description {
+        font-size: 24px;
+        line-height: 37px;
+    }
+
+    .content .bike_info .review_wrapper {
+        margin-top: 18px;
+    }
+
+    .content .bike_info .star {
+        margin-right: 15px;
+
+        width: 23px;
+        height: 23px;
+    }
+
+    .content .bike_info .star:last-child {
+        margin-right: 23px;
+    }
+
+    .content .bike_info .rating {
+        font-size: 24px;
+        line-height: 37px;
+    }
+
+    /* Форма */
+    .news_letter_form {
+        padding: 30px 117px 70px;
+    }
+
+    .news_letter_form .sign_up_message {
+        font-size: 25px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.3px;
+    }
+
+    .news_letter_form form {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 42px;
+    }
+    
+    .news_letter_form .input_wrapper {
+        margin-top: 53px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .news_letter_form .input {
+        padding-left: 33px;
+
+        width: calc(50% - 15px - 33px);
+        height: 53px;
+
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .news_letter_form .submit {
+        margin-top: 50px;
+
+        width: 100%;
+        height: 53px;
+
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .news_letter_form .input_wrapper .name_input {
+        background-position: 9px 50%;
+        background-size: 16px 17px;
+    }
+
+    .news_letter_form .input_wrapper .e-mail_input {
+        background-position: 9px 50%;
+        background-size: 16px 13px;
+    }
+
+    /* Подвал страницы */
+    footer .footer_content {
+        margin: 30px 0 23px 30px;
+
+        font-size: 20px;
+        line-height: 30px;
+    } 
+
+    footer .footer_links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .footer_link {
+        margin-right: 30px;
+    }
+
+    footer .developed {
+        margin-top: 17px;
+    }
+}
+
+@media (min-width: 1440px) {
+    /* Меню страницы */
+    nav .nav_logo {
+        margin: 0 0 0 40px;
+    }
+
+    nav .nav_logo picture {
+        height: 80px;
+    }
+
+    nav .nav_logo picture {
+        display: block;
+    }
+
+    nav .nav_logo img {
+        width: 65px;
+        height: 80px;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .header .links_wrapper {
+        margin-left: 98px;
+    }
+
+    .header .link_wrapper:not(:first-child) { display: block; }
+
+    .header .link_wrapper {
+        margin-right: 50px;
+    }
+
+    .header .links_wrapper .nav_link.active::after {
+        bottom: -26px;
+    }
+    
+    /* Контент страницы */
+    .content_wrapper {
+        background-image: url(/img/Background768.png);
+        background-position: center;
+
+        width: 100%;
+        height: 810px;
+    }
+
+    .content {
+        padding: 160px 0 0 216px;
+    }
+
+    .content .bike_info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content .bike_info .review_wrapper {
+        margin-top: 0;
+    }
+
+    /* Форма */
+    .news_letter_form {
+        padding: 60px 230px 90px;
+    }
+
+    .news_letter_form .sign_up_message {
+        padding: 0 96px;
+
+        font-size: 35px;
+        line-height: 53px;
+    }
+
+    .news_letter_form form {
+        padding: 0;
+        margin-top: 40px;
+
+        width: 100%;
+
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .news_letter_form .input_wrapper {
+        margin: 0;
+    }
+
+    .news_letter_form .input {
+        margin-right: 40px;
+
+        width: 267px;
+        height: 50px;
+    }
+
+    .news_letter_form .submit {
+        margin: 0;
+
+        width: 300px;
+        height: 50px;
+    }
+
+    /* Подвал страницы */
+    footer .footer_content {
+        margin: 20px 0;
+        padding: 0 40px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    } 
+
+    footer .footer_links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .footer_link {
+        margin-right: 30px;
+    }
+
+    footer .developed {
+        margin: 0;
+    }
+}

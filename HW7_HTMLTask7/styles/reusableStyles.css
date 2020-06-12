@@ -1,0 +1,49 @@
+/* Выравнивания */
+._justify-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+._align-center {
+    align-items: center;
+}
+
+/* Направления flex блоков */
+._direction-row {
+    display: flex;
+    flex-direction: row;
+}
+
+._direction-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Анимации для кнопок */
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    transition: .2s ease-in;
+}
+
+button:active {
+    transform: scale(.95);
+    transition: .2s;
+}
+
+/* Анимации для ссылок */
+.link_wrapper:hover,
+.footer_link:hover {
+    transition: .3s;
+    transform: scale(1.02);
+}
+
+/* Анимации для инпатов */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 1.5px 3px #F92251;
+}
