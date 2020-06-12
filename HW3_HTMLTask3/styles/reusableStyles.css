@@ -1,0 +1,90 @@
+/* --------------
+Стили для реиспользования
+-------------- */
+
+/* Стандартная кнопка */
+button {
+    border: 0;
+    height: 40px;
+
+    padding: 12px 17px;
+
+    background-color: white;
+    color: #757575;
+
+    border: solid 1px #757575;
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+/* Стандартный инпат */
+input {
+    padding: 0 14px;
+
+    font-size: 14px;
+
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: solid 1px #007AFF;
+}
+
+/* Стандартное меню */
+.menu_wrapper {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    float: left;
+
+    text-decoration: none;
+
+    margin-right: 53px;
+}
+
+.menu a:last-child {
+    margin-right: 0px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Выравнивание контента по ширине */
+._justify-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+._justify-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Вывравнивание контента по центру */
+._align-center {
+    display: flex;
+    align-items: center;
+}
+
+/* Выравнивание блока по центру страницы */
+._center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    border: 1px solid #C6C6C5;
+}

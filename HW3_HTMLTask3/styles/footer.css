@@ -1,0 +1,60 @@
+/* --------------
+Подвал страницы
+-------------- */
+footer {
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+footer .blocks_wrapper {
+    max-width: 970px;
+}
+
+footer .title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+footer .options_wrapper {
+    position: absolute;
+
+    margin-top: 10px;
+}
+
+footer .option {
+    margin-top: 10px;
+}
+
+footer .option img {
+    margin-right: 5px;
+}
+
+footer a {
+    text-decoration: none;
+
+    color: #1C1C1B;
+}
+
+footer hr {
+    margin-top: 185px;
+
+    border: 1px solid #C6C6C5;
+    border-bottom: none;
+
+    width: 90%;
+}
+
+footer .lower_footer {
+    margin-top: 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer .lower_footer a {
+    color: #878786;
+}
+
+footer .lower_footer div:not(:last-child) a {
+    margin-right: 15px;
+}
