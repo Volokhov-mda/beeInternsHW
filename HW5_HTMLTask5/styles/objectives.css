@@ -1,0 +1,12 @@
+.objectives_wrapper .content_title {
+    padding: 17px 0 21px;
+}
+
+.objectives_wrapper .test_description {
+    padding-top: 12px;
+    width: 500px;
+
+    font-weight: bold;
+
+    opacity: .5;
+}

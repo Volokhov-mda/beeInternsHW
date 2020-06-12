@@ -1,0 +1,100 @@
+._flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+._flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Выравнивания по ширине */
+._justify-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+._justify-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Выравнивания по центру */
+._align-center {
+    display: flex;
+    align-items: center;
+}
+
+._center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Стандартные стили блоков */
+.main_block {
+    border-radius: 5px;
+
+    background: white;   
+}
+
+.sub_block {
+    border-radius: 8px;
+
+    background: rgba(0, 84, 254, 0.04);
+}
+
+/* Стандартный тайтл для блоков контента */
+.content_title {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/* Стандартный чекбокс */
+.checkbox {
+    display: inline-block;
+    position: relative;
+
+    margin-right: 6px;
+
+    min-width: 12px;
+    min-height: 12px;
+
+    border: 1px solid #4A4A4A;
+    border-radius: 1px;
+}
+
+
+.checkbox_inp {
+    position: absolute;
+
+    margin: 0;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0;
+}
+
+.checkbox__v {
+    display: block;
+    position: absolute;
+
+    left: 3px;
+    top: 3px;
+
+    min-width: 6px;
+    min-height: 6px;
+
+    background:#4A4A4A;
+
+    opacity: 0;
+
+    transition: .15s;
+}
+
+.checkbox_inp:checked + .checkbox__v {
+    opacity: 1;
+}

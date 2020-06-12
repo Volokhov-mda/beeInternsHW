@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/reusablestyles.css">
+    <link rel="stylesheet" href="styles/blocks_styles.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/objectives.css">
+    <link rel="stylesheet" href="styles/preparation.css">
+    <title>Flex task</title>
+</head>
+<body>
+    <div class="container _flex-row">
+        <div class="dashboard">
+            <div class="dashboard_content">
+                <div class="dashbord_title">Usability test plan dashboard</div>
+
+                <div class="block_group">
+                    <div class="block">
+                        <div class="block_title">The sercive/product that is going to be tested</div>
+                        <div class="block_picture sub_block"></div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block_title">Business requirement</div>
+                        <div class="block_picture sub_block"></div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block_title">User requirements</div>
+                        <div class="block_picture sub_block"></div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block_title">Location &amp; dates of the tests</div>
+                        <div class="block_picture sub_block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content _flex-column _align-center _center">
+            <div class="objectives_wrapper _flex-column">
+                <div class="content_title">Test Objectives</div>
+                <div class="objectives _flex-row _justify-between">
+                    <div class="objective main_block _justify-evenly">
+                        <div class="test_description">
+                            Why are you doing this user testing? What are the benefits Any risks of not achieving this test?
+                        </div>
+                    </div>
+                    <div class="objective main_block _justify-evenly">
+                        <div class="test_description">
+                            What are the goals of the usability test? What are the specific questions that will be answered? 
+                            What hypothesis that will be tested?
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preparation_wrapper">
+                <div class="content_title">Test Preparation</div>
+                <div class="preparation main_block">
+                    <div class="blocks_wrapper _justify-evenly _flex-row">
+                        <div class="left_blocks">
+                            <div class="upper_group _justify-between _flex-row">
+                                <div class="first_block sub_block">
+                                    <div class="title _center">Teams who are involved and what are their responsibilities?</div>
+                                </div>
+                                <div class="second_block sub_block">
+                                    <div class="block_content _center">
+                                        <div class="title">Test plan / procedure</div>
+                                        <div class="subTitle">List the main steps of the test procedure</div>
+                                        <div class="block_group _justify-between">
+                                            <div class="sub_block _align-center"><div class="text">1</div></div>
+                                            <div class="sub_block _align-center"><div class="text">2</div></div>
+                                            <div class="sub_block _align-center"><div class="text">3</div></div>
+                                            <div class="sub_block _align-center"><div class="text">4</div></div>
+                                            <div class="sub_block _align-center"><div class="text">5</div></div>
+                                            <div class="sub_block _align-center"><div class="text">6</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lower_block sub_block">
+                                <div class="block_content">
+                                    <div class="title">Review before the test (check if done)</div>
+                                    <div class="form _flex-row _justify-between">
+                                        <div class="first_form_col form_col">
+                                            <div class="checkbox_wrapper _align-center">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="checkbox_inp" id="email_cb">
+                                                    <span class="checkbox__v"></span>
+                                                </div>
+
+                                                <label for="email_cb" class="label_cb">Email Participants</label>
+                                            </div>
+                                            <div class="note_wrapper">
+                                                <div class="note_text">If checked, write the date that was sent</div>
+                                                <div class="some_main_note">Date:</div>
+                                            </div>
+                                        </div>
+                                        <div class="second_form_col form_col">
+                                            <div class="form_label">Reminder participant about the tests</div>
+
+                                            <div class="note_wrapper">
+                                                <div class="note_text">Write the number and dates of the reminders <br>
+                                                    If reminder was done, please check the box</div>
+                                                
+                                                <div class="note_checkboxes">
+                                                    <div class="checkbox_wrapper _align-center">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" class="checkbox_inp" id="rem1_cb">
+                                                            <span class="checkbox__v"></span>
+                                                        </div>
+                                                        <label for="rem1_cb" class="label_cb some_main_note">Reminder #1 - Date:</label>
+                                                    </div>
+                                                    <div class="checkbox_wrapper _align-center">
+                                                        <div class="checkbox">
+                                                            <input type="checkbox" class="checkbox_inp" id="rem2_cb">
+                                                            <span class="checkbox__v"></span>
+                                                        </div>
+                                                        <label for="rem2_cb" class="label_cb some_main_note">Reminder #2 - Date:</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="third_form_col form_col">
+                                            <div class="checkbox_wrapper _align-center">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="checkbox_inp" id="ethical">
+                                                    <span class="checkbox__v"></span>
+                                                </div>
+
+                                                <label for="ethical" class="label_cb">Ethical Approval prepared and sent</label>
+                                            </div>
+
+                                            <div class="checkbox_wrapper _align-center">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="checkbox_inp" id="rec">
+                                                    <span class="checkbox__v"></span>
+                                                </div>
+
+                                                <label for="rec" class="label_cb">Recording consent form prepared for the test session</label>
+                                            </div>
+                                            
+                                            <div class="checkbox_wrapper _align-center">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="checkbox_inp" id="usab">
+                                                    <span class="checkbox__v"></span>
+                                                </div>
+
+                                                <label for="usab" class="label_cb">Usability testing checklist prepared for the test session</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right_block sub_block">
+                            <div class="container">
+                                <div class="title">Test Tasks</div>
+                                <div class="description">List the test tasks</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

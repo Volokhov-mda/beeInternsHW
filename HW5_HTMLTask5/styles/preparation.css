@@ -1,0 +1,146 @@
+.preparation_wrapper .content_title {
+    padding: 22px 0 13px;
+}
+
+.preparation .blocks_wrapper {
+    padding-top: 26px;
+}
+
+.preparation_wrapper .sub_block {
+    width: 100px;
+    height: 50px;
+}
+
+/* -------------
+Первый блок
+------------- */
+.preparation_wrapper .first_block {
+    width: 195px;
+    height: 240px;
+}
+
+.preparation_wrapper .first_block .title {
+    padding: 8px 9px 0 8px;
+}
+
+/* -------------
+Второй блок
+------------- */
+.preparation_wrapper .second_block {
+    width: 660px;
+    height: 240px;
+}
+
+.preparation_wrapper .second_block .block_content {
+    padding: 14px 0 0 0;
+
+    width: 96%;
+}
+
+.preparation_wrapper .second_block .subTitle {
+    font-size: 14px;
+    font-weight: bold;
+
+    opacity: .5;
+}
+
+.preparation_wrapper .second_block .block_group {
+    margin-top: 16px;
+
+    width: 100%;
+}
+
+.preparation_wrapper .second_block .block_group .sub_block {
+    width: 98px;
+    height: 158px;
+
+    font-weight: bold;
+
+    opacity: .5;
+}
+
+.preparation_wrapper .second_block .block_group .sub_block .text {
+    margin-left: 7px;
+}
+
+/* -------------
+Нижний блок 
+------------- */
+.preparation_wrapper .lower_block {
+    margin-top: 16px;
+
+    width: 870px;
+    height: 197px;
+}
+
+.preparation_wrapper .lower_block .block_content {
+    padding: 8px 44px 0 8px;
+}
+
+.preparation_wrapper .lower_block .form {
+    margin-top: 21px;
+}
+
+.preparation_wrapper .lower_block .note_wrapper {
+    font-size: 12px;
+}
+
+.preparation_wrapper .lower_block .form_col .some_main_note {
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+/* Первая колонка */
+.preparation_wrapper .lower_block .first_form_col {
+    max-width: 252px;
+}
+
+.preparation_wrapper .lower_block .first_form_col .note_wrapper {
+    margin: 10px 0 0 37px;
+}
+
+/* Вторая колонка */
+.preparation_wrapper .lower_block .second_form_col {
+    max-width: 234px;
+}
+
+.preparation_wrapper .lower_block .second_form_col .note_wrapper {
+    margin: 10px 0 0 19px;
+}
+
+.preparation_wrapper .lower_block .second_form_col .note_checkboxes {
+    margin-top: 5px;
+}
+
+.preparation_wrapper .lower_block .second_form_col .checkbox_wrapper:not(:first-child) {
+    margin-top: 8px;
+}
+
+/* Третья колонка */
+.preparation_wrapper .lower_block .third_form_col {
+    max-width: 200px;
+}
+
+.preparation_wrapper .lower_block .third_form_col .checkbox_wrapper:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+/* -------------
+Правый блок
+------------- */
+.preparation_wrapper .right_block {
+    width: 195px;
+    height: 440px;
+}
+
+.preparation_wrapper .right_block .container {
+    padding: 8px 9px 0 8px;
+}
+
+.preparation_wrapper .right_block .description {
+    font-weight: bold;
+
+    opacity: .5;
+}
+
