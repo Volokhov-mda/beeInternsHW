@@ -1,0 +1,41 @@
+.container {
+    max-width: 910px;
+    margin: 0 auto;
+    font-family: serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(24, 24, 24);
+}
+
+h2 {
+    font-size: 17px;
+}
+
+.conclusionHeader {
+    margin-bottom: 0px; 
+}
+
+.conclusionParagraph {
+    margin-top: 0px;
+}
+
+p {
+    font-size: 17px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    font-size: 17px;
+}
+
+img {
+    max-width: 100%;
+}
