@@ -1,0 +1,107 @@
+.tabs_wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 4px;
+    
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    list-style: none;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    position: relative;
+}
+
+.tab .blue_line {
+    position: absolute;
+
+    left: -10px;
+
+    /* Задал константные top и height, чтобы анимация открытия блока была покрасивее.
+    Можно было сделать top: 20%; height: 60%;. Выравнивание было бы по центру материнского блока. */
+    top: 10px;
+
+    width: 2px;
+    height: 26px;
+
+    background: #0179FF;
+}
+
+.tab_heading_wrapper {
+    position: relative;
+
+    height: 46px;
+
+    border: 1px solid #E8E8E8;
+    outline: none;
+
+    color: #000;
+
+    background: #F5F5F5;
+}
+
+.tab_heading {
+    position: absolute;
+
+    top: 15px;
+    left: 35px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.tab_trigger {
+    display: none;
+}
+
+.tab_trigger:not(:checked) ~ .quote_wrapper {
+    display: none;
+}
+
+.tab_trigger:checked ~ .quote_wrapper {
+    display: block;
+    animation: open .6s ease-out;
+}
+
+.tab_trigger:checked ~ .blue_line {
+    animation: stretchLine .6s ease-out forwards;
+}
+
+.tab_heading::before {
+    position: absolute;
+
+    content: ">";
+
+    left: -15px;
+}
+
+.tab .tab_trigger:checked + .tab_heading_wrapper .tab_heading::before {
+    transition: .6s;
+    transform: rotate(90deg);
+}
+
+.quote_wrapper {
+    padding: 0px 20px 20px 40px;
+}
+
+.quote_wrapper img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Анимации */
+@keyframes open {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes stretchLine {
+    0% { height: 26px; top: 10px; }
+    100% { height: calc(100% - 5px); top: 5px; }
+}
