@@ -13,6 +13,17 @@ for (0; i <= 50; i += 10) {
   { profession: 'hero', name: 'Кларк', secondName: 'Кент' }
 */
 
+/* 
+  Непонятно, каким образом надо задавать profession, если в функцию передается два аргумента.
+  Наверное, если тема у нас была замекания, то надо брать профессию из глобального контекста, что я реализовал в функции.
+  Если в задании все-таки требовалось, чтобы profession все время был 'hero', то функция должна возвращать:
+  return { profession: 'hero', name: nameValue, secondName: secondNameValue };
+*/
+function Men(nameValue, secondNameValue) {
+  return { profession: manProfession, name: nameValue, secondName: secondNameValue };
+}
+
+let manProfession = 'hero';
 const superman = new Men('Кларк', 'Кент');
 console.log('superman: ', superman);
 // Men { profession: 'hero', name: 'Кларк', secondName: 'Кент' }
