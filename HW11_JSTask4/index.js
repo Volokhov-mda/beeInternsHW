@@ -53,7 +53,8 @@ console.log(sum(5)(-1).toString()); // 4
 const bird = ['П', 'т', 'и', 'ц', 'а'];
 
 for (var index = 0; index < bird.length; index++) {
-  setTimeout(function(index) {
-    console.log(bird[index]);
+  const _index = index;
+  setTimeout(() => {
+    console.log(bird[_index]);
   }, 100);
 }
