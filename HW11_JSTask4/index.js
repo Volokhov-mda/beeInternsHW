@@ -31,8 +31,21 @@ console.log('superman: ', superman);
 
 // Задание 3
 // Напишите функцию sum, которая работает так: sum(a)(b) возвращает a + b.
-sum(1)(2);  // 3
-sum(5)(-1); // 4
+let sum = function(firstNumber) {
+  let sum = firstNumber;
+
+  function _sum(secondNumber) {
+    sum += secondNumber;
+    return _sum;
+  }
+
+  _sum.toString = function() { return sum; };
+
+  return _sum;
+}
+
+console.log(sum(1)(2).toString());  // 3
+console.log(sum(5)(-1).toString()); // 4
 
 
 // Задание 4
