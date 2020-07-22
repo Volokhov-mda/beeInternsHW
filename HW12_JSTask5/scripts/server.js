@@ -6,6 +6,18 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../index.html'));
 });
 
+app.get('/scripts/listeners.js/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'listeners.js'))
+});
+
+app.get('/scripts/server.js/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'server.js'))
+});
+
+app.get('/scripts/variables.js/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'variables.js'))
+});
+
 app.get('/serviceavailable/', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../serviceavailable.json'));
 });
