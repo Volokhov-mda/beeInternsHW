@@ -25,7 +25,7 @@ pp.addEventListener('click', async () => {
                              reject();
                          }
                      })
-                     .catch(err => serverResponse.innerHTML = 'Произошла ошибка')),
+                     .catch(err => reject())),
 
                 new Promise((resolve, reject) => axios.get('/getdescription')
                      .then(resp => {
@@ -36,7 +36,7 @@ pp.addEventListener('click', async () => {
                             reject();
                         }
                      })
-                     .catch(err => serverResponse.innerHTML = 'Произошла ошибка'))
+                     .catch(err => reject()))
              ]);
          })
          .then(resp => {
