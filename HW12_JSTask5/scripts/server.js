@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../index.html'));
 });
 
+app.get('/styles/styles.css', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '../styles/styles.css'));
+});
+
 app.get('/scripts/listeners.js/', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'listeners.js'))
 });
