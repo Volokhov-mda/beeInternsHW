@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookies</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <form class="form" action="/user" method="POST"></form> -->
+        <form id="form">
+            <fieldset class="full_name">
+                <div class="input_wrapper surname_wrapper">
+                    <label class="label_for_input" for="surname">Фамилия:</label>
+                    <input class="text_input" type="text" name="surname" id="surname" required>
+                </div>
+                <div class="input_wrapper name_wrapper">
+                    <label class="label_for_input" for="name">Имя:</label>
+                    <input class="text_input" type="text" name="name" id="name" required>
+                </div>
+                <div class="input_wrapper patronymic_wrapper">
+                    <label class="label_for_input" for="patronymic">Отчество:</label>
+                    <input class="text_input" type="text" name="patronymic" id="patronymic">
+                </div>
+            </fieldset>
+            <button type="submit" id="submit_button">Сохранить</button>
+        </form>
+    </div>
+    <script src="../variables.js"></script>
+    <script src="scripts/saveCookies.js"></script>
+</body>
+</html>
