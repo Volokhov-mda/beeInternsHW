@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    
+    background: #F0F0F0;
+}
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #FFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .3);
+}
+
+#input_number_button {
+    width: 150px;
+
+    margin-top: 10px;
+}
+
+.number_header_wrapper {
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    margin: 0 10px;
+}
+
+#number_header {
+    padding: 0 10px;
+
+    overflow: scroll;
+}
+
+#number_entered_plus_one {
+    margin-top: 5px;
+}
