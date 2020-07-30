@@ -2,3 +2,15 @@ body {
     margin: 0;
     font-family: Roboto, sans-serif;
 }
+
+.cotainer {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1300px;
+    height: 100vh;
+
+    background: #FCFCFC;
+}
