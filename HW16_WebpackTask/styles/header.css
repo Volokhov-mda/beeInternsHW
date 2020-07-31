@@ -1,0 +1,104 @@
+header {
+    width: 1300px;
+
+    padding: 22px 0;
+    margin: 0 auto;
+
+    box-shadow: 6px 2px 20px rgba(0, 0, 0, 0.06);
+    background: #FFF;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_header,
+.right_header {
+    display: flex;
+    align-items: center;
+}
+
+.logo_wrapper {
+    display: flex;
+    margin-left: 56px;
+}
+
+#logo {
+    font-size: 30px;
+
+    overflow: scroll;
+
+    color: #2B6EB2;
+
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav_content {
+    margin-left: 113px;
+
+    display: flex;
+}
+
+.link_wrapper {
+    margin-right: 54px;
+
+    display: flex;
+    align-items: center;
+}
+
+.link_wrapper:last-child {
+    margin-right: 0;
+}
+
+.link_wrapper a {
+    text-decoration: none;
+
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.link_wrapper img {
+    margin-right: 11px;
+}
+
+.link_wrapper:hover {
+    cursor: pointer;
+}
+
+.link_wrapper:hover a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.right_header {
+    margin-left: 70px;
+    margin-right: 48px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+
+    margin-left: 42px;
+}
+
+#logout:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#profile_pic {
+    margin-left: 30px;
+
+    height: 50px;
+    width: 50px;
+}
+
+#profile_pic img {
+    height: 50px;
+    width: 50px;
+}
