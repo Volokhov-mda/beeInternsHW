@@ -1,3 +1,4 @@
+const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -30,12 +31,23 @@ module.exports = {
             options: {
                 outputPath: 'images',
             }
-        }]
+        },
+        // {
+        //     test: /\.ttf$/i,
+        //     loader: 'file-loader',
+        //     options: {
+        //         outputPath: 'fonts/Roboto',
+        //     }
+        // }
+    ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html'
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new CopyPlugin({
+            patterns: [ { from: './fonts/Roboto', to: 'fonts/Roboto' } ],
+        }),
     ]
 }
