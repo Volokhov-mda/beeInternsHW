@@ -6,13 +6,16 @@
   "scripts": {
     "build": "webpack",
     "build-dev": "webpack --mode=development",
-    "build-prod": "webpack --mode=production"
+    "build-prod": "webpack --mode=production",
+    "run-dev-server": "webpack-dev-server"
   },
   "keywords": [],
   "author": "Volokhov-mda <volokhov.nik@yandex.ru>",
   "license": "ISC",
   "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
