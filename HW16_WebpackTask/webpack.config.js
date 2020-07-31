@@ -11,7 +11,14 @@ module.exports = {
         moduleIds: 'natural'
     },
     devServer: {
-        contentBase: __dirname + '/public'
+        contentBase: './public'
+    },
+    module: {
+        rules: 
+        [{
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader']
+        }]
     },
     plugins: [
         new HtmlWebpackPlugin({
