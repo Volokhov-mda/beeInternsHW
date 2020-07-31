@@ -1,3 +1,4 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -16,11 +17,11 @@ module.exports = {
         contentBase: './public'
     },
     module: {
-        rules: 
-        [{
-            test: /\.css$/i,
-            use: ['style-loader', 'css-loader']
-        },
+        rules: [
+        // {
+        //     test: /\.css$/i,
+        //     use: ['style-loader', 'css-loader']
+        // },
         {
             test: /header\.html$/i,
             loader: 'html-loader',
@@ -32,14 +33,10 @@ module.exports = {
                 outputPath: 'images',
             }
         },
-        // {
-        //     test: /\.ttf$/i,
-        //     loader: 'file-loader',
-        //     options: {
-        //         outputPath: 'fonts/Roboto',
-        //     }
-        // }
-    ]
+        {
+            test: /\.css$/i,
+            use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        }]
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -49,5 +46,6 @@ module.exports = {
         new CopyPlugin({
             patterns: [ { from: './fonts/Roboto', to: 'fonts/Roboto' } ],
         }),
+        new MiniCssExtractPlugin()
     ]
 }
