@@ -1,5 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
+// const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -35,6 +35,14 @@ module.exports = {
             }
         },
         {
+            test: /\.ttf$/i,
+            loader: 'file-loader',
+            options: {
+                outputPath: 'fonts',
+                name: '[name].[ext]'
+            }
+        },
+        {
             test: /\.css$/i,
             use: [MiniCssExtractPlugin.loader, 'css-loader'],
         }]
@@ -44,9 +52,9 @@ module.exports = {
             template: './index.html'
         }),
         new CleanWebpackPlugin(),
-        new CopyPlugin({
-            patterns: [ { from: './fonts/Roboto', to: 'fonts/Roboto' } ],
-        }),
+        // new CopyPlugin({
+        //     patterns: [ { from: './fonts/Roboto', to: 'fonts/Roboto' } ],
+        // }),
         new MiniCssExtractPlugin()
     ]
 }
