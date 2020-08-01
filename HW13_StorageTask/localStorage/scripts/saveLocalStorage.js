@@ -2,43 +2,46 @@ function GetLocalStorageKeyValue() {
     let localStorage = window.localStorage;
 
     for (let i = 0; i < localStorage.length; i++) {
-        fullName[Object.keys(localStorage)[i]] = Object.values(localStorage)[i];
+        personInfo[Object.keys(localStorage)[i]] = Object.values(localStorage)[i];
     }
 }
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    let fullName = 
+    let personInfo = 
     {
         'userName': nameInput.value.trim(), 
-        'userSurname': surnameInput.value.trim()
+        'userSurname': surnameInput.value.trim(),
+        'doesLikeSport': sportCheckbox.checked
     };
 
     if (patronymicInput.value.trim()) {
-        fullName['userPatronymic'] = patronymicInput.value.trim();
+        personInfo['userPatronymic'] = patronymicInput.value.trim();
     } else {
-        delete fullName['userPatronymic'];
+        delete personInfo['userPatronymic'];
         window.localStorage.removeItem('userPatronymic');
     }
 
-    for (let i = 0; i < Object.keys(fullName).length; i++) {
-        window.localStorage.setItem(Object.keys(fullName)[i], Object.values(fullName)[i]);
+    for (let i = 0; i < Object.keys(personInfo).length; i++) {
+        window.localStorage.setItem(Object.keys(personInfo)[i], Object.values(personInfo)[i]);
     }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     GetLocalStorageKeyValue();
 
-    if (fullName['userSurname']) {
-        surnameInput.value = fullName['userSurname'];
+    if (personInfo['userSurname']) {
+        surnameInput.value = personInfo['userSurname'];
     }
 
-    if (fullName['userName']) {
-        nameInput.value = fullName['userName'];
+    if (personInfo['userName']) {
+        nameInput.value = personInfo['userName'];
     }
 
-    if (fullName['userPatronymic']) {
-        patronymicInput.value = fullName['userPatronymic'];
+    if (personInfo['userPatronymic']) {
+        patronymicInput.value = personInfo['userPatronymic'];
     }
+
+    sportCheckbox.checked = personInfo['doesLikeSport']  == 'true' ? true : false;
 });

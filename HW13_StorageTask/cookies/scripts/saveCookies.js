@@ -4,43 +4,48 @@ function GetCookieKeyValue() {
     for (let i = 0; i < cookies.length; i++) {
         let parsedCookie = cookies[i].split('=');
         
-        fullName[parsedCookie[0]] = parsedCookie[1];
+        personInfo[parsedCookie[0]] = parsedCookie[1];
     }
+
+
 }
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    let fullName = 
+    let personInfo = 
     {
         'userName': nameInput.value.trim(), 
-        'userSurname': surnameInput.value.trim()
+        'userSurname': surnameInput.value.trim(),
+        'doesLikeSport': sportCheckbox.checked
     };
 
     if (patronymicInput.value.trim()) {
-        fullName['userPatronymic'] = patronymicInput.value.trim();
+        personInfo['userPatronymic'] = patronymicInput.value.trim();
     } else {
-        delete fullName['userPatronymic'];
+        delete personInfo['userPatronymic'];
         document.cookie = `userPatronymic=DELETED;max-age=0`
     }
 
-    for (let i = 0; i < Object.keys(fullName).length; i++) {
-        document.cookie = `${Object.keys(fullName)[i]}=${Object.values(fullName)[i]};max-age=600`;
+    for (let i = 0; i < Object.keys(personInfo).length; i++) {
+        document.cookie = `${Object.keys(personInfo)[i]}=${Object.values(personInfo)[i]};max-age=600`;
     }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     GetCookieKeyValue();
 
-    if (fullName['userSurname']) {
-        surnameInput.value = fullName['userSurname'];
+    if (personInfo['userSurname']) {
+        surnameInput.value = personInfo['userSurname'];
     }
 
-    if (fullName['userName']) {
-        nameInput.value = fullName['userName'];
+    if (personInfo['userName']) {
+        nameInput.value = personInfo['userName'];
     }
 
-    if (fullName['userPatronymic']) {
-        patronymicInput.value = fullName['userPatronymic'];
+    if (personInfo['userPatronymic']) {
+        patronymicInput.value = personInfo['userPatronymic'];
     }
+
+    sportCheckbox.checked = personInfo['doesLikeSport']  == 'true' ? true : false;
 });
