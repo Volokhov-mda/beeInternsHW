@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+
+    background: #F0F0F0;
+}
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    padding: 10px;
+
+    background: #FFF;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+fieldset {
+    margin: 0;
+    padding: 15px 40px;
+}
+
+.input_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10px;
+}
+
+.input_wrapper:last-child {
+    margin-bottom: 0;
+}
+
+.label_for_input {
+    width: 100px;
+
+    display: inline-block;
+}
+
+#submit_button {
+    width: 100px;
+
+    margin-top: 5px;
+}
+
+#sport {
+    margin-left: 10px;
+}
